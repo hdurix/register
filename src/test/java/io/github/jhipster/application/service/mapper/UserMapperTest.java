@@ -4,7 +4,6 @@ package io.github.jhipster.application.service.mapper;
 import io.github.jhipster.application.RegisterApp;
 import io.github.jhipster.application.domain.User;
 import io.github.jhipster.application.service.dto.UserDTO;
-import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -36,13 +35,12 @@ public class UserMapperTest {
     private User user;
     private UserDTO userDto;
 
-    private static final Long DEFAULT_ID = 1L;
+    private static final String DEFAULT_ID = "id1";
 
     @Before
     public void init() {
         user = new User();
         user.setLogin(DEFAULT_LOGIN);
-        user.setPassword(RandomStringUtils.random(60));
         user.setActivated(true);
         user.setEmail("johndoe@localhost");
         user.setFirstName("john");

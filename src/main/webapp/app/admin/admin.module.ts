@@ -6,10 +6,6 @@ import { RegisterSharedModule } from 'app/shared';
 import {
     adminState,
     AuditsComponent,
-    UserMgmtComponent,
-    UserMgmtDetailComponent,
-    UserMgmtUpdateComponent,
-    UserMgmtDeleteDialogComponent,
     LogsComponent,
     JhiMetricsMonitoringComponent,
     JhiHealthModalComponent,
@@ -26,10 +22,6 @@ import {
     ],
     declarations: [
         AuditsComponent,
-        UserMgmtComponent,
-        UserMgmtDetailComponent,
-        UserMgmtUpdateComponent,
-        UserMgmtDeleteDialogComponent,
         LogsComponent,
         JhiConfigurationComponent,
         JhiHealthCheckComponent,
@@ -37,7 +29,7 @@ import {
         JhiDocsComponent,
         JhiMetricsMonitoringComponent
     ],
-    entryComponents: [UserMgmtDeleteDialogComponent, JhiHealthModalComponent],
+    entryComponents: [JhiHealthModalComponent],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class RegisterAdminModule {}
